@@ -1,0 +1,55 @@
+:root {
+  --text-color:#D4D4D4;
+  --text-color-nav:#888282;
+  --button-color:rgb(82, 6, 223);
+  --button-color-hover:rgb(101, 32, 231);
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: #030712;
+  margin: 0;
+  padding: 0;
+  cursor: url('../img/cursor-small.svg') 32 32, auto;
+  opacity: 1;
+  transition: opacity 2s;
+  overflow: clip;
+  display: grid;
+}
+main {
+  position: absolute;
+  left: 32%;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+a:hover {
+  cursor: url('../img/cursor-big.svg') 32 32, auto;
+}
+
+li {
+  list-style: none;
+}
+
+
+#slide {
+  position: absolute;
+  left: -1000px;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 0.3s;
+  animation: slide 0.5s forwards;
+  animation-delay: 0.3s;
+}
+
+@-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+@keyframes slide {
+  0% { left: -1000px; }
+  100% {left: 32%;}
+  
+}

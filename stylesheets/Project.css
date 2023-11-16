@@ -1,0 +1,76 @@
+body {
+  width: 100vw;
+}
+
+main {
+  width: 60%;
+}
+.button {
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: var(--button-color);
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.563rem 1.125rem;
+  font-size: 100%;
+  border-radius: 0.25rem;
+  /* auto transition for fade out and fade in */
+  transition: all 0.5s;
+}
+.button:hover, .button:focus, .button:active {
+  background-color: var(--button-color-hover);
+  scale: 1.2;
+  cursor: pointer;
+} 
+
+
+
+.container > h1 {
+  font-size: 3em;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  grid-area: header;
+}
+
+.Desktop-foto {
+  width: 100%; /* Make sure the image takes up the full width of its container */
+  height: auto;
+  border-radius: 10px;
+  border: var(--button-color) 5px solid;
+}
+
+
+
+table {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+
+  border-radius: 10px;
+  
+  padding: 0;
+  color: aliceblue;
+}
+th {
+  text-align: left;
+  
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+td {
+
+  font-size: 30px;
+  padding-bottom: 30px;
+
+}
+td.text {
+  text-align: left; /* Align text to the left */
+  vertical-align: top; /* Align text to the top */
+  font-size: 18px;
+}
