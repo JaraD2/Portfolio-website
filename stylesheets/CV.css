@@ -48,8 +48,4 @@ a.button:hover, a.button:focus, a.button:active {
     border: none;
     
   }
-  main {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
 }

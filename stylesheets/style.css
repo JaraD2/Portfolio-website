@@ -1,8 +1,8 @@
 :root {
-  --text-color:#D4D4D4;
-  --text-color-nav:#888282;
-  --button-color:rgb(82, 6, 223);
-  --button-color-hover:rgb(101, 32, 231);
+  --text-color: #D4D4D4;
+  --text-color-nav: #888282;
+  --button-color: rgb(82, 6, 223);
+  --button-color-hover: rgb(101, 32, 231);
 }
 
 body {
@@ -14,167 +14,196 @@ body {
   cursor: url('../img/cursor-small.svg') 32 32, auto;
   opacity: 1;
   transition: opacity 2s;
-
 }
-h1,h2,h3,h4,h5,h6 {
+
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
+
 a:hover {
   cursor: url('../img/cursor-big.svg') 32 32, auto;
 }
+
 li {
   list-style: none;
 }
+
 main {
   margin-top: 50px;
   margin-left: 50px;
 }
 
-
 #slide {
   position: absolute;
   left: -1000px;
-  -webkit-animation: slide 0.5s forwards;
-  -webkit-animation-delay: 0.3s;
   animation: slide 0.5s forwards;
   animation-delay: 0.3s;
 }
-@-webkit-keyframes slide {
-  100% { left: 0; }
-}
+
 @keyframes slide {
-  0% { left: -1000px; }
-  100% {left: 25%;}
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 25%;
+  }
 }
+
 @media screen and (max-width: 1000px) and (min-width: 550px) {
   nav {
     width: 25%;
     padding: 0;
   }
-  .list-item > a:not(.a):hover, .list-item > a:not(.a):focus, .list-item > a:not(.a):active {
+
+  .list-item > a:not(.a):hover,
+  .list-item > a:not(.a):focus,
+  .list-item > a:not(.a):active {
     font-weight: 600;
     font-size: 20px;
   }
+
   .name-title {
     font-size: 15px !important;
     margin-top: 20px;
     margin-left: 40px;
   }
+
   nav > ul > li > a {
     font-size: 15px !important;
   }
 }
+
 @media screen and (max-width: 550px) and (min-width: 0px) {
-nav {
-  position: fixed;
-  top: 0;
-  width: 100% !important;
-  position: relative !important;
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
-  height: auto;
-  display: flex !important;
-  border-bottom:#D4D4D4 1px solid;
-  border-right: none !important;
-}
-.nav {
-  display: none;
-  background-color: var(--button-color);
-  border: #dfdfdf solid 1px;
-  border-radius: 10px;
-  position: absolute;
-  top: 115px;
-  right: 5px;
-}
-.nav.active {
-  display: grid !important;
-}
-.name-title {
-  margin-left: 10px !important;
-}
-.name-title > h1 {
-  font-size:30px ;
-}
-.name-title > span {
-  font-size: 25px;
-}
-.nav-image {
-  display: block !important;
-  position: absolute;
-  right: 10px;
-  top: 35%;
-}
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100% !important;
+    position: relative !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    height: auto;
+    display: flex !important;
+    border-bottom: #D4D4D4 1px solid;
+    border-right: none !important;
+  }
 
-.nav > li > a {
-  color: #dfdfdf;
-  text-decoration: none;
-  display: block;
+  .nav {
+    display: none;
+    background-color: var(--button-color);
+    border: #dfdfdf solid 1px;
+    border-radius: 10px;
+    position: absolute;
+    top: 115px;
+    right: 5px;
+  }
 
-  font-weight: 400;
-  text-align: center;
-}
-.nav > li > a:not(.active):hover, .nav > li > a:not(.active):focus, .list-item > a:not(.active):active {
-  font-weight: 600;
-  font-size: 25px;
-}
-.nav > li > a.active {
-  background-color: #030712;
-  border-radius: 10px 10px 0px 0px;
-}
-.nav > li:not(:last-child) {
-  margin: 0px;
-  border-bottom: #dfdfdf solid 1px;
-}
+  .nav.active {
+    display: grid !important;
+  }
 
-.nav > li > a {
-  font-size: 15px !important;
-}
-.nav > li {
-  margin: 0px;
-}
+  .name-title {
+    margin-left: 10px !important;
+  }
 
-.nav > li > a.active {
-  font-size: 25px !important;
-}
+  .name-title > h1 {
+    font-size: 30px;
+  }
 
-/* Main Content Styles */
-main {
-  display: block !important;
-  margin-top: 30px;
-  margin-left: 0px !important;
-}
+  .name-title > span {
+    font-size: 25px;
+  }
 
-li.project:first-child { margin-top: 0px !important;}
-#nav-menu {
-  cursor: pointer;
-}
+  .nav-image {
+    display: block !important;
+    position: absolute;
+    right: 10px;
+    top: 35%;
+  }
 
-#nav-menu.active {
-  animation:rotate 0.5s forwards;
-}
+  .nav > li > a {
+    color: #dfdfdf;
+    text-decoration: none;
+    display: block;
+    font-weight: 400;
+    text-align: center;
+  }
 
-#nav-menu:not(.active) {
-  animation:rotate-back 0.5s forwards;
-}
+  .nav > li > a:not(.active):hover,
+  .nav > li > a:not(.active):focus,
+  .list-item > a:not(.active):active {
+    font-weight: 600;
+    font-size: 25px;
+  }
 
-@keyframes rotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(90deg); }
-}
+  .nav > li > a.active {
+    background-color: #030712;
+    border-radius: 10px 10px 0px 0px;
+  }
 
-@keyframes rotate-back {
-  0% { transform: rotate(90deg); }
-  100% { transform: rotate(0deg); }
-}
+  .nav > li:not(:last-child) {
+    margin: 0px;
+    border-bottom: #dfdfdf solid 1px;
+  }
 
-@-webkit-keyframes slide {
-  0% { left: -1000px; }
-  100% {left: 5%;}
-}
+  .nav > li > a {
+    font-size: 15px !important;
+  }
 
-@keyframes slide {
-  0% { left: -1000px; }
-  100% {left: 5%;}
-}
+  .nav > li {
+    margin: 0px;
+  }
+
+  .nav > li > a.active {
+    font-size: 25px !important;
+  }
+
+  main {
+    display: block !important;
+    margin-top: 30px;
+    margin-left: 0px !important;
+  }
+
+  li.project:first-child {
+    margin-top: 0px !important;
+  }
+
+  #nav-menu {
+    cursor: pointer;
+  }
+
+  #nav-menu.active {
+    animation: rotate 0.5s forwards;
+  }
+
+  #nav-menu:not(.active) {
+    animation: rotate-back 0.5s forwards;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+
+  @keyframes rotate-back {
+    0% {
+      transform: rotate(90deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      left: -1000px;
+    }
+    100% {
+      left: 5%;
+    }
+  }
 }

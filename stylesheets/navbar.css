@@ -1,3 +1,9 @@
+:root {
+  --text-color: #D4D4D4;
+  --text-color-nav: #888282;
+  --button-color: rgb(82, 6, 223);
+}
+
 nav {
   position: fixed;
   height: 100%;
@@ -11,37 +17,41 @@ nav {
   padding-top: 50px;
 }
 
-
 .nav-image {
   display: none;
 }
+
 .name-title {
   margin-left: 50px;
   font-size: 30px;
   font-weight: 600;
 }
+
 .name-title > span {
   color: var(--text-color-nav);
 }
+
 ul.nav {
   margin: 0;
   padding: 0;
 }
-.nav > li >a {
+
+.nav > li > a {
   color: var(--text-color);
   text-decoration: none;
   display: block;
-  padding: 10px 0;
+  padding: 10px;
   font-size: 25px;
   font-weight: 400;
-  padding: 10px;
 }
 
-
-.nav > li >a:not(.active):hover, .nav > li >a:not(.active):focus, .list-item > a:not(.active):active {
+.nav > li > a:not(.active):hover,
+.nav > li > a:not(.active):focus,
+.list-item > a:not(.active):active {
   font-weight: 600;
   font-size: 35px;
 }
+
 .nav > li > a.active {
   font-size: 45px;
 }
