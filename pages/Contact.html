@@ -17,19 +17,9 @@
   <link rel="stylesheet" href="../stylesheets/contact.css">
   <title>Contact, Jara Doornbos</title>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BGJDJSN6YW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-BGJDJSN6YW');
-</script>
-
-
-<script src="../scripts/first load.js"></script>
 <body>
+<!-- start nav -->
   <nav>
     <div class="name-title">
       <h1>Jara Doornbos</h1>
@@ -44,11 +34,9 @@
       <li><a href="../pages/CV.html">CV</a></li>
     </ul>
   </nav>
+<!-- end nav -->
 
-
-
-
-    
+<!-- start main  -->
   <main id="slide">
     <form action="mailto:jara@jaradoornbos.me" method="post" enctype="text/plain" class="contact">
       <h1>Contact</h1>
@@ -69,13 +57,15 @@
   
       <div class="contact">
         <h1>Or contact me directly</h1>
-        <p>Email: jaradoornbos1@gmail.com</p>
+        <p>Email: <span id="email-obfucation"></span></p>
 
     </div>
-  
-
   </main>
+<!-- end main -->
 
+<!-- scripts -->
   <script src="/scripts/Phone-animations.js"></script>
+  <script src="/scripts/email-obfucation.js"></script>
+<!-- end scripts -->
 </body>
 </html>
