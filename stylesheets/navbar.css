@@ -30,10 +30,13 @@ nav {
 .name-title > span {
   color: var(--text-color-nav);
 }
-
 ul.nav {
   margin: 0;
   padding: 0;
+}
+ul.nav:not(.active) {
+  margin: 40px;
+
 }
 
 .nav > li > a {
@@ -55,3 +58,4 @@ ul.nav {
 .nav > li > a.active {
   font-size: 45px;
 }
+
