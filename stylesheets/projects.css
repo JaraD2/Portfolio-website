@@ -8,6 +8,10 @@ h2 {
 .project {
   margin-bottom: 50px;
 }
+main > ul {
+  margin: 0;
+  padding: 0;
+}
 .project > a {
   color: #ffffff;
   background-color: var(--button-color);
@@ -17,11 +21,9 @@ h2 {
   text-align: center;
   user-select: none;
   border: 1px solid transparent;
-  padding: 0.563rem 1.125rem;
+  padding: 0.5rem 0.5rem;
   font-size: 100%;
   border-radius: 0.25rem;
-  
-  
   /* auto transition for fade out and fade in */
   transition: all 0.5s;
 
@@ -34,7 +36,7 @@ h2 {
 p {
   width: 60%;
 }
-li.project:first-child { margin-top: 50px;}
+li.project:first-child { margin-top: 0px;}
 li.project { 
   margin-bottom: 20px;
 }
@@ -47,10 +49,7 @@ li.project {
   }
 }
 @media screen and (max-width: 400px) {
-  .project-info > a {
-    font-size: 15px;
-  }
   p {
-    width: 100%;
+    width: 90%;
   }
 }

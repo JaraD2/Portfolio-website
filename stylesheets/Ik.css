@@ -1,23 +1,10 @@
-img {
-  width:inherit;
-  border-radius: inherit;
-
-}
-.img-container  {
-  border: rgb(156, 156, 156) 2px solid;
-  width: 400px;
-  margin-left: 50px;
-  border-radius: 15px;
-  line-height: 0;
-}
 main > p {
 color: var(--text-color);
 width: 85%;
 }
 main {
-  position: absolute;
-  top: 50px;
-  left: 36%;
+  margin-top: 50px;
+  margin-left: 40px;
 }
 main{
   align-items: center;
@@ -35,10 +22,10 @@ main{
 }
 @media screen and (max-width: 400px) {
   main {
-
-    width: 80%;
+    margin-top:10px;
+    width: 90%;
     font-size: 15px;
-    margin-left: 20px;
+    margin-left: 0px;
   }
 
 

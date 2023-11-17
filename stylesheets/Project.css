@@ -3,10 +3,10 @@ body {
 }
 
 main {
-  width: 60%;
+  width: 70%;
+  color: var(--text-color);
 }
 .button {
-  margin-top: 20px;
   color: #ffffff;
   background-color: var(--button-color);
   border-radius: 10px;
@@ -20,57 +20,56 @@ main {
   border-radius: 0.25rem;
   /* auto transition for fade out and fade in */
   transition: all 0.5s;
+  position: absolute;
+  top: 0; 
+  right: 10px;
 }
 .button:hover, .button:focus, .button:active {
   background-color: var(--button-color-hover);
-  scale: 1.2;
+  scale: 1.7;
   cursor: pointer;
-} 
+}
+.paragraph {
 
+  margin-top: 10px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
+}
+.paragraph > p {
+  width: 90%;
+  font-size: 20px;
 
-.container > h1 {
-  font-size: 3em;
-  color: var(--text-color);
-  margin: 0;
-  padding: 0;
-  grid-area: header;
+  margin: 0px;
+  padding: 0px;
 }
 
-.Desktop-foto {
-  width: 100%; /* Make sure the image takes up the full width of its container */
+
+.paragraph > img {
+  width: 400px; /* Make sure the image takes up the full width of its container */
   height: auto;
   border-radius: 10px;
   border: var(--button-color) 5px solid;
+  float: right;
 }
 
-
-
-table {
-  margin-top: 30px;
-  width: 100%;
-  height: auto;
-  border-collapse: collapse;
-
-  border-radius: 10px;
-  
-  padding: 0;
-  color: aliceblue;
-}
-th {
-  text-align: left;
-  
-  font-size: 40px;
-  padding-bottom: 30px;
-}
-td {
-
-  font-size: 30px;
-  padding-bottom: 30px;
-
-}
-td.text {
-  text-align: left; /* Align text to the left */
-  vertical-align: top; /* Align text to the top */
-  font-size: 18px;
+@media only screen and (max-width: 950px) {
+  main {
+    width: 80%;
+  }
+  .paragraph {
+    flex-direction: column;
+  }
+  .paragraph > img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    border: var(--button-color) 5px solid;
+    margin-top: 10px;
+  }
+  .button {
+    right: 10px;
+  }
 }
