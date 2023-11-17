@@ -23,6 +23,10 @@ nav {
 .name-title > span {
   color: var(--text-color-nav);
 }
+ul.nav {
+  margin: 0;
+  padding: 0;
+}
 .nav > li >a {
   color: var(--text-color);
   text-decoration: none;
@@ -30,7 +34,9 @@ nav {
   padding: 10px 0;
   font-size: 25px;
   font-weight: 400;
+  padding: 10px;
 }
+
 
 .nav > li >a:not(.active):hover, .nav > li >a:not(.active):focus, .list-item > a:not(.active):active {
   font-weight: 600;
